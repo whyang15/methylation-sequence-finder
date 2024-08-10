@@ -1,5 +1,0 @@
-name: negative_control_test
-search string: GATC
-positions: []
-sequence contexts found: []
-
