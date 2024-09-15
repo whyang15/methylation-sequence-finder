@@ -1,0 +1,24 @@
+name: dam_test1
+search string: gatc
+number of times found: 5
+positions of gatc: [14, 32, 49, 66, 83]
+sequence contexts found: ['GCGATCAA', 'CGGATCTT', 'ATGATCAA', 'CAGATCGT', 'TGGATCTG']
+
+name: dam_test2
+search string: gatc
+number of times found: 5
+positions of gatc: [1, 32, 49, 66, 83]
+sequence contexts found: ['TGATCGA', 'CGGATCTT', 'ATGATCAA', 'CAGATCGT', 'TGGATCTG']
+
+name: ecorI_test
+search string: gatc
+number of times found: 0
+positions of gatc: []
+sequence contexts found: []
+
+name: negative_control_test
+search string: gatc
+number of times found: 0
+positions of gatc: []
+sequence contexts found: []
+

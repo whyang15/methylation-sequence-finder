@@ -7,8 +7,8 @@ from Bio import SeqIO
 
 from unittest.mock import mock_open, patch
 from io import StringIO
-from methFinder import find_methylase_recognition_sites
-from methFinder import process_recognition_sites
+from matchaSeq import find_methylase_recognition_sites
+from matchaSeq import process_recognition_sites
 
 class TestScriptFunctionality(unittest.TestCase):
 
@@ -106,7 +106,7 @@ class TestScriptFunctionality(unittest.TestCase):
     
 
     # test the case where the output file cannot be created.
-    @patch('methFinder.open', new_callable=mock_open)
+    @patch('matchaSeq.open', new_callable=mock_open)
     def test_output_file_oserror(self, mock_file):
 
         # simulate OSError when trying to open the file

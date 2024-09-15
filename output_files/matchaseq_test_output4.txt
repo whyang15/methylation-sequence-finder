@@ -1,0 +1,24 @@
+name: dam_test1
+search string: GACT
+number of times found: 0
+positions of gact: []
+sequence contexts found: []
+
+name: dam_test2
+search string: GACT
+number of times found: 0
+positions of gact: []
+sequence contexts found: []
+
+name: ecorI_test
+search string: GACT
+number of times found: 2
+positions of gact: [5, 88]
+sequence contexts found: ['CGGACTGT', 'CGGACTAG']
+
+name: negative_control_test
+search string: GACT
+number of times found: 0
+positions of gact: []
+sequence contexts found: []
+

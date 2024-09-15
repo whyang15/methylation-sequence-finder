@@ -1,0 +1,6 @@
+name: dam_test1
+search string: GACT
+number of times found: 0
+positions of gact: []
+sequence contexts found: []
+

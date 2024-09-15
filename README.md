@@ -1,5 +1,4 @@
-# methFinder  
-
+# matchaSeq 
 
 This is a tool that finds methyltransferase recognition sites within a given sequence. The tool takes a FASTA file as input and a search sequence as well as a context size as command-line arguments.
 For each sequence in the FASTA file, the tool will:
@@ -27,11 +26,26 @@ sequence contexts found: ['CGGACTGT', 'CGGACTAG']
 
 This tool can be useful for researchers working with methyltransferase enzymes, as it allows them to quickly identify potential recognition sites within genomic or transcriptomic sequences.  
 
+## Set up Environment
+matchaSeq requires BioPython to run.  To set up a conda environment that contains Biopython, follow the instructions below:
+
+```
+# Create new conda env:
+conda create -n matchaseq python=3.10
+conda activate matchaseq
+
+# install Biopython
+conda install -n conda-forge biopython
+
+# verify installation
+python -c "import Bio; print(Bio.__version__)"    # should return the version number
+1.84
+
 ## Usage
 Command line usage:
 ```
-% python3 methFinder.py -h
-usage: methFinder.py [-h] [-n NUMBASES] -i INPUT -f FIND [-o OUTPUT]
+% python3 matchaSeq.py -h
+usage: matchaSeq.py [-h] [-n NUMBASES] -i INPUT -f FIND [-o OUTPUT]
 
 Given a methylase (methyltransferase) recognition site and the number of upstream and downstream sequence from it, find the
 number and locations of recognitions sites in a given DNA template sequence.
@@ -49,7 +63,7 @@ optional arguments:
 
 ### Example output
 ```
-% python3 methFinder.py -i fasta_files/methfinder_test.fasta -f gact -n 2
+% python3 matchaSeq.py -i fasta_files/matchaseq_test.fasta -f gact -n 2
 Processing sequence: dam_test1
 Processing sequence: dam_test2
 Processing sequence: ecorI_test
