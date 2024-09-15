@@ -1,14 +1,14 @@
 # matchaSeq 
 
-This is a tool that finds methyltransferase recognition sites within a given sequence. The tool takes a FASTA file as input and a search sequence as well as a context size as command-line arguments.
+**matchaSeq** (**match-a-Seq**uence) is a script that finds methyltransferase recognition sites within a given sequence. This tool takes a FASTA file as input and a search sequence as well as a context size as command-line arguments.
 For each sequence in the FASTA file, the tool will:
 - Identify the number of occurrences of the search sequence.
 - Report the positions where the search sequence was found.
 - Output the sequence context around each occurrence of the search sequence, where the context size is specified by the command-line argument.
 
-The reporting of sequence contexts around each occurrence of the search sequence further informs the researchers of sequence variations between recognition sites. This additional information can be valuable for researchers working with methyltransferase enzymes, as it can provide insights into the specificity and flexibility of the recognition sites.
+The reporting of sequence contexts around each occurrence of the search string further informs the researchers of sequence variations between recognition sites. This additional information can be valuable for researchers working with methyltransferase enzymes, as it can provide insights into the specificity and flexibility of the recognition sites.
 
-The output will be txt file containing the following information for each sequence:
+The output will be a *.txt* file containing the following information for each sequence:
 - The name of the sequence
 - The search sequence used
 - The number of occurrences of the search sequence
@@ -40,6 +40,7 @@ conda install -n conda-forge biopython
 # verify installation
 python -c "import Bio; print(Bio.__version__)"    # should return the version number
 1.84
+```
 
 ## Usage
 Command line usage:
